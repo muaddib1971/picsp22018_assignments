@@ -32,7 +32,7 @@ enum input_result init_game(struct game* newgame, struct player players[])
  * then loops and calls take_turn for the current player and swaps players until
  * a player has won the game
  **/
-struct player* play_game(struct player players[])
+void play_game(void)
 {
         /* the game struct that holds the data on the game state */
         struct game curgame;
@@ -56,8 +56,8 @@ void swap_players(struct player** first, struct player** second)
 }
 
 /**
- * implements the rules for the first round of the game, the so-called 
- * swap2 rules. Please see the assignment specification and game rules for 
+ * implements the rules for the first round of the game, the so-called
+ * swap2 rules. Please see the assignment specification and game rules for
  * further details.
  **/
 enum input_result first_round(struct game* thegame)
