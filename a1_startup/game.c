@@ -22,7 +22,7 @@
  * also ensure the board is coorectly initialised through a call to
  * init_board().
  **/
-enum input_result init_game(struct game* newgame, struct player players[])
+enum input_result init_game(struct game* newgame)
 {
         return IR_FAILURE;
 }
@@ -40,7 +40,6 @@ void play_game(void)
         /* the main game loop */
         /* swap the game pointers */
         /* return the winner */
-        return NULL;
 }
 
 /**
